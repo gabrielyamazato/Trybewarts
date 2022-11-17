@@ -1,13 +1,18 @@
-const btEnter = document.getElementById('btn-enter');
-const email = document.querySelector('#email').value;
-const password = document.querySelector('#password').value;
+const btEnter = document.querySelector('#btn-enter');
+const email = document.querySelector('#email');
+const password = document.querySelector('#password');
 
-function alert() {
-    if (email == 'tryber@teste.com' && password == 123456) {
+const getInput = () => {
+    const getEmail = email.value;
+    const getPassword = email.value;
+
+    if (getEmail == 'tryber@teste.com' && getPassword == 123456) {
         return alert('Olá, Tryber!')
     } else {
-        return alert('Email ou senha inválidos.') 
+        return alert('Email ou senha inválidos.')
     }
 }
 
-btEnter.addEventListener('click', alert);
+window.onload = () => {
+    btEnter.addEventListener('click', getInput)
+}
