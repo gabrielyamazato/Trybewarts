@@ -1,6 +1,8 @@
 const btEnter = document.querySelector('#btn-enter');
 const email = document.querySelector('#email');
 const password = document.querySelector('#password');
+const btSend = document.querySelector('#submit-btn');
+const checkbox = document.querySelector('#agreement');
 
 const getInput = () => {
     const getEmail = email.value;
@@ -13,6 +15,11 @@ const getInput = () => {
     }
 }
 
+const checkedBox = () => {
+    btSend.disabled ? btSend.disabled = false : btSend.disabled = true;
+}
+
 window.onload = () => {
-    btEnter.addEventListener('click', getInput)
+    btEnter.addEventListener('click', getInput);
+    checkbox.addEventListener('click', checkedBox);
 }
