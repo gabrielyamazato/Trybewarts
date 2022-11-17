@@ -8,10 +8,10 @@ const getInput = () => {
   const getEmail = email.value;
   const getPassword = password.value;
 
-  if (getEmail === 'tryber@teste.com' && getPassword === 123456) {
-    return alert('Olá, Tryber!');
+  if (getEmail === 'tryber@teste.com' && getPassword === '123456') {
+    alert('Olá, Tryber!');
   } else {
-    return alert('Email ou senha inválidos.');
+    alert('Email ou senha inválidos.');
   }
 };
 
