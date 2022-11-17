@@ -4,7 +4,7 @@ const password = document.querySelector('#password');
 
 const getInput = () => {
     const getEmail = email.value;
-    const getPassword = email.value;
+    const getPassword = password.value;
 
     if (getEmail == 'tryber@teste.com' && getPassword == 123456) {
         return alert('Olá, Tryber!')
