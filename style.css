@@ -32,5 +32,9 @@ main {
 #familia{
   display: flex;
   flex-direction: column;
-  
+}
+p > textarea{
+width: 55%;
+height: 120%;
+resize: none;
 }
