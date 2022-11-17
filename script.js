@@ -15,11 +15,19 @@ const getInput = () => {
   }
 };
 
-const checkedBox = () => {
-  btSend.disabled ? btSend.disabled = false : btSend.disabled = true;
-};
+// const checkedBox = () => {
+// btSend.disabled ? btSend.disabled = false : btSend.disabled = true;
+// };
+
+checkbox.addEventListener('click', () => {
+  if (checkbox.checked === true) {
+    btSend.removeAttribute('disabled');
+  } else if (checkbox.checked === false) {
+    btSend.setAttribute('disabled', '');
+  }
+});
 
 window.onload = () => {
   btEnter.addEventListener('click', getInput);
-  checkbox.addEventListener('click', checkedBox);
+// checkbox.addEventListener('click', checkedBox);
 };
