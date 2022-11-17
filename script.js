@@ -5,21 +5,21 @@ const btSend = document.querySelector('#submit-btn');
 const checkbox = document.querySelector('#agreement');
 
 const getInput = () => {
-    const getEmail = email.value;
-    const getPassword = password.value;
+  const getEmail = email.value;
+  const getPassword = password.value;
 
-    if (getEmail == 'tryber@teste.com' && getPassword == 123456) {
-        return alert('Olá, Tryber!')
-    } else {
-        return alert('Email ou senha inválidos.')
-    }
-}
+  if (getEmail === 'tryber@teste.com' && getPassword === 123456) {
+    return alert('Olá, Tryber!');
+  } else {
+    return alert('Email ou senha inválidos.');
+  }
+};
 
 const checkedBox = () => {
-    btSend.disabled ? btSend.disabled = false : btSend.disabled = true;
-}
+  btSend.disabled ? btSend.disabled = false : btSend.disabled = true;
+};
 
 window.onload = () => {
-    btEnter.addEventListener('click', getInput);
-    checkbox.addEventListener('click', checkedBox);
-}
+  btEnter.addEventListener('click', getInput);
+  checkbox.addEventListener('click', checkedBox);
+};
