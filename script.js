@@ -36,4 +36,4 @@ window.onload = () => {
 function countDown(obj) {
   count.innerHTML = 500 - obj.value.length;
 }
-countDown();
+console.log(countDown);
