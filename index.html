@@ -47,7 +47,7 @@
         </p>
         <p>
         <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label><br>
-                
+
         <input type="checkbox" class="subject" value="HoFs" name="" id="hofs">
         <label for="hofs">HoFs</label>
         <input type="checkbox" class="subject" value="Jest" name="" id="jest">
@@ -84,8 +84,12 @@
           <input type="radio" value="10" name="rate" id="10">
           <label for="10">10</label>
         </p>
-        <p><label class="textarea">Deixe seu comentário:</label><br>
-          <textarea maxlength="500"></textarea>
+        <p>
+          <label class="textarea">Deixe seu comentário:</label><br>
+          <textarea maxlength="500" cols="50" rows="20" id="textarea" onkeyup="countDown(this)"></textarea>
+          <br>
+          <span id="counter">500</span> 
+          <b>Caracters</b>
         </p>
         <br>
         <p>

@@ -3,6 +3,7 @@ const email = document.querySelector('#email');
 const password = document.querySelector('#password');
 const btSend = document.querySelector('#submit-btn');
 const checkbox = document.querySelector('#agreement');
+const count = document.querySelector('#counter');
 
 const getInput = () => {
   const getEmail = email.value;
@@ -31,3 +32,8 @@ window.onload = () => {
   btEnter.addEventListener('click', getInput);
 // checkbox.addEventListener('click', checkedBox);
 };
+
+function countDown(obj) {
+  count.innerHTML = 500 - obj.value.length;
+}
+countDown();

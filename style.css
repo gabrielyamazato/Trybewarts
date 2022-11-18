@@ -35,7 +35,7 @@ main {
 }
 
 p > textarea {
-  width: 55%;
-  height: 120%;
+  width: 90%;
+  height: 55%;
   resize: none;
 }
