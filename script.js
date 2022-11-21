@@ -70,7 +70,7 @@ function getValues() {
     }
   }
 
-  familyData.innerHTML = `Familia: ${inputChecked}`;
+  familyData.innerHTML = `Família: ${inputChecked}`;
 
   const subjectData = document.querySelector('#subject-data');
   const subjectInput = document.querySelectorAll('.subject')
