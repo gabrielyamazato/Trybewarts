@@ -1,10 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  color: white;
+}
+
+.trybewarts-header-logo {
+  width: 70px;
+  margin-left: 10px;
 }
 
 .trybewarts-login {
   display: flex;
+  gap: 5px;
+}
+
+#email, #password {
+  height: 40px;
+  width: 140px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+#btn-enter {
+  height: 40px;
+  width: 100px;
+  outline: none;
+  border: none;
+  padding: 0 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(95, 46, 141);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  transition: 0.3s;
+  opacity: 0.9;
 }
 
 #main-container {
@@ -16,13 +58,30 @@
 main {
   display: flex;
   width: 675px;
-  border: 1px solid black;
+  justify-content: space-between;
 }
 
 #evaluation-form {
   display: flex;
-  flex-direction: column;
   width: 675px;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 20px 40px;
+  padding: 15px;
+  font-size: 16px;
+  align-self: auto;
+}
+
+#input-name, #input-lastname, #input-email, #house {
+  height: 40px;
+  width: 200px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+  outline: none;
+  border-radius: 5px;
+  background-color: white;
+  padding-left: 10px;
+  font-size: 12px;
 }
 
 #form-data {
@@ -39,8 +98,44 @@ main {
   flex-direction: column;
 }
 
-p > textarea {
-  width: 90%;
-  height: 55%;
+#textarea {
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+  outline: none;
   resize: none;
+  padding: 20px;
+}
+
+#counter {
+  text-align: end;
+  position: relative;
+  top: -30px;
+  right: -425px;
+  color: black;
+}
+
+#submit-btn {
+  height: 30px;
+  width: 81%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(95, 46, 141);
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+}
+
+#submit-btn:disabled {
+  opacity: 0.5;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(50, 167, 145);
+  padding: 5px;
+  color: white;
 }
