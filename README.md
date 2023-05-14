@@ -42,9 +42,7 @@ Abra o VSCode
   code .
 ```
 
-```
 Instale a extensão Live Server e clique em Go Live
-```
 
 
 ## Autores
