@@ -1,10 +1,52 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+
+# Projeto Trybewarts
+
+Meu primeiro projeto que trabalhei com outra pessoa. O objetivo do projeto é criar um formulario e o controle dele.
+
+
+## Aprendizados
+
+Aprendi como construir um formulario controlado e de uma maneira mais simples como devolver erros. O maior desafio foi com certeza trabalhar em dupla com alguém que eu nunca tive contato e como resolver alguns conflitos no github.
+
+
+## Screenshots
+
+![App Screenshot](https://cdn.discordapp.com/attachments/1098241441580449892/1107394628266766397/TRYBEWARTS.gif)
+
+
+## Funcionalidades
+
+- Contador de caracteres no textarea
+- Controle de login simples
+- Controle de formulario
+- Página de feedback com dados preenchidos após o envio das informações
+
+
+## Rodando localmente
+
+Clone o projeto
+
+```bash
+  git clone git@github.com:gabrielyamazato/Trybewarts.git
+```
+
+Entre no diretório do projeto
+
+```bash
+  cd Pixels-Art
+```
+
+Abra o VSCode
+
+```bash
+  code .
+```
+
+Instale a extensão Live Server e clique em Go Live
+```
+
+
+## Autores
+
+- [@gabrielyamazato](https://github.com/gabrielyamazato)
+- [Luis Naoki](https://www.linkedin.com/in/luisnaoki/)

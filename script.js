@@ -5,6 +5,7 @@ const btSend = document.querySelector('#submit-btn');
 const checkbox = document.querySelector('#agreement');
 const count = document.querySelector('#counter');
 
+// ALERTA DO LOGIN
 const getInput = () => {
   const getEmail = email.value;
   const getPassword = password.value;
@@ -16,10 +17,7 @@ const getInput = () => {
   }
 };
 
-// const checkedBox = () => {
-// btSend.disabled ? btSend.disabled = false : btSend.disabled = true;
-// };
-
+// DESABILITA OU HABILITA O BOTÃO DE ACORDO COM O CHECKBOX
 checkbox.addEventListener('click', () => {
   if (checkbox.checked === true) {
     btSend.removeAttribute('disabled');
@@ -28,6 +26,7 @@ checkbox.addEventListener('click', () => {
   }
 });
 
+// FUNÇÃO QUE ESCONDE O FORMULÁRIO APÓS O ENVIO
 const hideForm = () => {
   const dataForm = document.querySelector('#form-data');
 
@@ -49,6 +48,7 @@ const familyData = document.querySelector('#family-data');
 const subjectData = document.querySelector('#subject-data');
 const evaluationData = document.querySelector('#evaluation-data');
 
+// FUNÇÃO QUE POPULA AS OPÇÕES DE AVALIAÇÃO NO FEEDBACK
 function evaluationForm() {
   const evaluationInput = document.getElementsByName('rate');
   let evaInputChecked;
@@ -62,6 +62,7 @@ function evaluationForm() {
   evaluationData.innerHTML = `Avaliação: ${evaInputChecked}`;
 }
 
+// FUNÇÃO QUE POPULA AS OPÇÕES DE MATERIAS NO FEEDBACK
 function subjectForm() {
   const subjectInput = document.querySelectorAll('.subject');
   let subjectChecked = '';
@@ -75,6 +76,7 @@ function subjectForm() {
   subjectData.innerHTML = `Matérias: ${subjectChecked}`;
 }
 
+// FUNÇÃO QUE POPULA AS OPÇÕES DE FAMILIA NO FEEDBACK
 function familyForm() {
   const familyInput = document.getElementsByName('family');
   let inputChecked;
@@ -88,6 +90,7 @@ function familyForm() {
   familyData.innerHTML = `Família: ${inputChecked}`;
 }
 
+// FUNÇÃO QUE POPULA OS DADOS DA TEXTAREA NO FEEDBACK
 function textAreaInput() {
   const obsData = document.querySelector('#obs-data');
 
@@ -100,6 +103,7 @@ function textAreaInput() {
 }
 textAreaInput();
 
+// FUNÇÃO QUE ESCONDE O FORMULARIO E RETORNA A PAGINA DE FEEDBACK
 function getValues() {
   hiddenForm();
   const nameInput = document.querySelector('#input-name').value;
@@ -118,10 +122,9 @@ window.onload = () => {
   hideForm();
   btSend.addEventListener('click', getValues);
   btEnter.addEventListener('click', getInput);
-  // checkbox.addEventListener('click', checkedBox);
 };
 
+// FUNÇÃO QUE ATUALIZA O CONTADOR DA TEXTAREA
 function countDown(obj) {
   count.innerHTML = 500 - obj.value.length;
 }
-console.log(countDown);
